@@ -34,6 +34,7 @@ THIRD_PARTY_APPS = [
     'phonenumber_field',
     'djoser',
     'rest_framework_simplejwt',
+    'drf_yasg',
 ]
 
 LOCAL_APPS = [
@@ -161,7 +162,7 @@ DJOSER = {
     "SERIALIZERS": {
         "user_create": "apps.users.serializers.CreateUserSerializer",
         "user": "apps.users.serializers.UserSerializer",
-        "current_user": "apps.users.serializers.CurrentUserSerializer",
+        "current_user": "apps.users.serializers.UserSerializer",
         "user_delete": "djoser.serializers.UserDeleteSerializer",
     }
 }

@@ -14,3 +14,4 @@ isort==5.9.3
 djoser==2.1.0
 djangorestframework-simplejwt==4.8.0
 pyJWT==2.1.0
+drf-yasg==1.21.5
