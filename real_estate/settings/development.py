@@ -3,6 +3,8 @@ from .base import *
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+DEFAULT_FROM_EMAIL = "info@real-estate.com"
+
 DATABASES = {
     'default': {
         'ENGINE': env("POSTGRES_ENGINE"),

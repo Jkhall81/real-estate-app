@@ -55,7 +55,10 @@ class ListAgentsPropertiesAPIView(generics.ListAPIView):
     
     def get_queryset(self):
         user = self.request.user
-        queryset = Property.objects.filter(user=user).order_by('-created_at')
+        if user.is_authenticated:
+            queryset = Property.objects.filter(user=user).order_by('-created_at')
+        else:
+            queryset = Property.objects.none()
         return queryset
     
 
