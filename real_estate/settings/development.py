@@ -6,9 +6,9 @@ from .base import *
 DEFAULT_FROM_EMAIL = "info@real-estate.com"
 
 DATABASES = {
-    'default': {
-        'ENGINE': env("POSTGRES_ENGINE"),
-        'NAME': env("POSTGRES_DB"),
+    "default": {
+        "ENGINE": env("POSTGRES_ENGINE"),
+        "NAME": env("POSTGRES_DB"),
         "USER": env("POSTGRES_USER"),
         "PASSWORD": env("POSTGRES_PASSWORD"),
         "HOST": env("PG_HOST"),
