@@ -166,7 +166,7 @@ cython_debug/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+client/node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -175,7 +175,7 @@ cython_debug/
 /coverage
 
 # next.js
-/.next/
+client/.next/
 /out/
 
 # production
@@ -197,5 +197,5 @@ yarn-error.log*
 .vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+client/*.tsbuildinfo
+client/next-env.d.ts
